@@ -12,10 +12,49 @@
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        />
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Immuno Factory"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bell"
+            android:scaleType="centerCrop"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            />
+    </android.support.v7.widget.Toolbar>
     <android.support.v4.widget.DrawerLayout
         android:id="@+id/drawerLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/main_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/dashboard_layout"/>
+        
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:background="#FAFAFA"
+            />
+
+    </android.support.v4.widget.DrawerLayout>
+
+
 
 </LinearLayout>

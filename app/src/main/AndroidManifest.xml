@@ -16,7 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DashboardActivity"></activity>
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Signup" />
+        <activity android:name=".VaccineActivity" />
+        <activity android:name=".TravelActivity" />
+        <activity android:name=".GroupActivity" />
+        <activity android:name=".GroupAcitivity" />
+        <activity android:name=".ScheduleActivity"></activity>
     </application>
 
 </manifest>
